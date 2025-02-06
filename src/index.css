@@ -7,6 +7,12 @@
   height: 100vh;
 }
 
-
-
+.squircle {
+    width: 100px;
+    height: 100px;
+    background: #fa7970;
+    clip-path: path(
+        "M 50 0 C 85 0 100 15 100 50 C 100 85 85 100 50 100 C 15 100 0 85 0 50 C 0 15 15 0 50 0 Z"
+    );
+}
 

@@ -17,7 +17,9 @@ const App = () => {
         >
           <ImLinkedin2 className="text-5xl m-4 text-blue-800" />
         </a>
-
+        <div className="squircle">
+          <p>hello world</p>
+        </div>
         <a
           href="https://github.com/williamlempinen"
           target="_blank"
