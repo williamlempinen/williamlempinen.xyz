@@ -7,6 +7,12 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    name: 'Rounal',
+    info: 'Rounal is a TUI application for your journalctl entries written with Rust.',
+    url: 'hello-world',
+    img: 'image-path',
+  },
+  {
     name: 'Flappy bird game',
     info: 'flappy bird game written in haskell',
     url: 'hello-world',
@@ -26,7 +32,7 @@ const projects: Project[] = [
   },
 ]
 
-const ProjectArticle = ({ name, info, url, img }: Project) => {
+const ProjectArticle = () => {
   return (
     <div>
       <p>hello wolr</p>
