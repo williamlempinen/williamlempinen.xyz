@@ -32,7 +32,7 @@ const Block = ({ block }: BlockProps) => {
   return (
     <div
       onClick={handleBlockClick}
-      className={`absolute ${block.blockColor} flex items-center justify-center rounded-md shadow-lg transition-transform ease-in-out duration-${ANIMATION_SPEED} h-24 w-24 cursor-pointer hover:scale-[1.02]`}
+      className={`absolute ${block.blockColor} flex items-center justify-center rounded-md shadow-lg transition-transform ease-in-out duration-${ANIMATION_SPEED} h-24 w-24 cursor-pointer hover:scale-[1.01]`}
       style={{
         transform: `translate(${translateX}px, ${translateY}px)`,
       }}

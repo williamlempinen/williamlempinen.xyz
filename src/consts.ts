@@ -64,15 +64,6 @@ export const TECH_STACK: GridBlock[] = [
     ...INIT_CELL,
   },
   {
-    id: 'tech-stack-postgresql',
-    alt: 'PostgreSQL',
-    href: 'https://www.postgresql.org',
-    icon: BiLogoPostgresql,
-    blockColor: 'bg-forest-l',
-    iconColor: 'text-white',
-    ...INIT_CELL,
-  },
-  {
     id: 'tech-stack-java',
     alt: 'Java',
     href: 'https://www.java.com',
@@ -87,6 +78,15 @@ export const TECH_STACK: GridBlock[] = [
     href: 'https://www.mongodb.com',
     icon: BiLogoMongodb,
     blockColor: 'bg-gray-m',
+    iconColor: 'text-white',
+    ...INIT_CELL,
+  },
+  {
+    id: 'tech-stack-postgresql',
+    alt: 'PostgreSQL',
+    href: 'https://www.postgresql.org',
+    icon: BiLogoPostgresql,
+    blockColor: 'bg-forest-l',
     iconColor: 'text-white',
     ...INIT_CELL,
   },
@@ -177,7 +177,7 @@ export const SOCIALS: GridBlock[] = [
   {
     id: 'socials-discord',
     alt: 'Discord',
-    href: '',
+    href: 'https://discord.com/users/647211349146861569',
     icon: BiLogoDiscordAlt,
     blockColor: 'bg-forest-l',
     iconColor: 'text-white',
@@ -195,7 +195,7 @@ export const SOCIALS: GridBlock[] = [
   {
     id: 'socials-github',
     alt: 'GitHub',
-    href: '',
+    href: 'https://github.com/williamlempinen',
     icon: BiLogoGithub,
     blockColor: 'bg-forest-d',
     iconColor: 'text-white',
@@ -204,7 +204,7 @@ export const SOCIALS: GridBlock[] = [
   {
     id: 'socials-bluesky',
     alt: 'Bluesky',
-    href: '',
+    href: 'https://bsky.app/profile/williamlempinen.bsky.social',
     icon: FaBluesky,
     blockColor: 'bg-forest-m',
     iconColor: 'text-white',
@@ -213,7 +213,7 @@ export const SOCIALS: GridBlock[] = [
   {
     id: 'socials-gmail',
     alt: 'Gmail',
-    href: '',
+    href: 'mailto:wlempin@gmail.com?subject=Lets%20Connect',
     icon: BiLogoGmail,
     blockColor: 'bg-gray-m',
     iconColor: 'text-white',
@@ -231,7 +231,7 @@ export const SOCIALS: GridBlock[] = [
   {
     id: 'socials-linkedin',
     alt: 'LinkedIn',
-    href: '',
+    href: 'https://www.linkedin.com/in/william-lempinen-0b6ba625a/',
     icon: BiLogoLinkedin,
     blockColor: 'bg-gray-l',
     iconColor: 'text-white',

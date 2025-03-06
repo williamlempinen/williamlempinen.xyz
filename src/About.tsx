@@ -1,24 +1,22 @@
 const About = () => {
   return (
-    <section>
+    <section className="flex flex-col gap-8">
       <div>
-        <h4>Who</h4>
-        <article>
-          Hello! My name is William and I'm 24 years old Software Engineering student from Finland,
-          Turku. I am studing my fourth year at the University of Turku where my study major is
-          Software Develoment and my minor is Cybersecurity.
+        <h4 className="text-forest-d mb-2 text-6xl font-bold">Who I Am</h4>
+        <article className="text-2xl leading-relaxed">
+          Hey there! I’m William, a 24-year-old Software Engineering student at the University of
+          Turku in Finland. I’m currently in my fourth year, majoring in Software Development with a
+          minor in Cybersecurity. I’ve always been fascinated by how technology shapes our world,
+          and I’m excited to be a part of it.
         </article>
       </div>
       <div>
-        <h4>What I do</h4>
-        <article>
-          I love software development, coding, and creating something beatiful just by typing my
-          keyboard.{' '}
+        <h4 className="text-forest-d mb-2 text-6xl font-bold">What I Do</h4>
+        <article className="text-2xl leading-relaxed">
+          I’m passionate about building and crafting beautiful digital experiences. I love the
+          challenge of turning ideas into elegant solutions and bringing them to life on the
+          screen—just by typing on my keyboard.
         </article>
-      </div>
-      <div>
-        <h4>fun facts</h4>
-        <article>Hello world</article>
       </div>
     </section>
   )
