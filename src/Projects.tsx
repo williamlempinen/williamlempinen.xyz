@@ -65,12 +65,12 @@ const Projects = () => {
               </div>
               <div className="flex flex-col justify-between">
                 <div className="flex flex-col gap-4">
-                  <p>
-                    <span className="text-forest-l font-bold">About: </span>
+                  <p className="text-xl">
+                    <span className="text-forest-l text-2xl font-bold">About: </span>
                     {project.info}
                   </p>
-                  <p>
-                    <span className="text-forest-l font-bold">Motivation: </span>
+                  <p className="text-xl">
+                    <span className="text-forest-l text-2xl font-bold">Motivation: </span>
                     {project.motivation}
                   </p>
                 </div>
