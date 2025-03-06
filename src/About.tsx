@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="flex flex-col gap-8">
+    <section className="flex flex-col gap-4">
       <div>
         <h4 className="text-forest-d mb-2 text-6xl font-bold">Who I Am</h4>
         <article className="text-2xl leading-relaxed">
@@ -11,7 +11,7 @@ const About = () => {
         </article>
       </div>
       <div>
-        <h4 className="text-forest-d mb-2 text-6xl font-bold">What I Do</h4>
+        <h4 className="text-forest-d mb-1 text-6xl font-bold">What I Do</h4>
         <article className="text-2xl leading-relaxed">
           I’m passionate about building and crafting beautiful digital experiences. I love the
           challenge of turning ideas into elegant solutions and bringing them to life on the

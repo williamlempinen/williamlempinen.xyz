@@ -30,9 +30,9 @@ const App = () => {
           </p>
         </div>
       </header>
-      <main className="flex h-3/4 flex-col items-center justify-start p-8">
+      <main className="flex h-3/4 flex-col items-center justify-start px-6">
         <div className="flex w-full max-w-[1400px] flex-1 flex-col items-center">
-          <div className="flex h-auto w-auto flex-col items-center gap-12 p-2">
+          <div className="flex h-auto w-auto flex-col items-center gap-8 p-2">
             <SwitchTransition>
               <CSSTransition
                 key={currentSection}
@@ -45,7 +45,7 @@ const App = () => {
                     <About />
                     <MovingGrid title="Connect with me" gridSize={3} items={SOCIALS} />
                     {window.innerWidth >= 428 && (
-                      <MovingGrid title="My current tech Stack" gridSize={4} items={TECH_STACK} />
+                      <MovingGrid title="My current tech stack" gridSize={4} items={TECH_STACK} />
                     )}
                   </>
                 ) : (

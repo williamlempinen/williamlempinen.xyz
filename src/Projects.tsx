@@ -54,9 +54,7 @@ const Projects = () => {
       {projects.map((project) => (
         <React.Fragment key={project.name}>
           <div className="flex flex-col">
-            <h3 className="text-forest-m self-center text-2xl font-bold underline">
-              {project.name}
-            </h3>
+            <h3 className="text-forest-d self-center text-3xl font-bold">{project.name}</h3>
             <div className="grid grid-cols-1 gap-2 p-2 sm:grid-cols-2">
               <div className="flex flex-col justify-start">
                 <img
