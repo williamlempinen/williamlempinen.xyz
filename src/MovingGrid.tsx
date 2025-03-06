@@ -131,7 +131,7 @@ const MovingGrid = ({ title, gridSize, items }: MovingGridProps) => {
 
   return (
     <div className="flex flex-col items-center">
-      <h3 className="text-lg font-semibold">{title}</h3>
+      <h3 className="text-forest-d mb-2 text-3xl font-bold">{title}</h3>
       <div
         className="relative grid"
         style={{
