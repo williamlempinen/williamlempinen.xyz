@@ -24,15 +24,23 @@ const Block = ({ block }: BlockProps) => {
   const translateY = block.y * (BLOCK_SIZE + GAP_SIZE)
 
   const handleBlockClick = () => {
+    if (block.href === "Let's connect!!") {
+      window.alert("Let's connect!!")
+      return
+    }
+
     if (block.href.length > 0) {
       window.open(block.href, '_blank', 'noopener, noreferrer')
+      return
     }
+
+    window.alert("Oops... I'll update this later ;)")
   }
 
   return (
     <div
       onClick={handleBlockClick}
-      className={`absolute ${block.blockColor} flex items-center justify-center rounded-md shadow-lg transition-transform ease-in-out duration-${ANIMATION_SPEED} h-24 w-24 cursor-pointer hover:scale-[1.02]`}
+      className={`absolute ${block.blockColor} border-grayPri flex items-center justify-center rounded-xl border-2 shadow-lg transition-transform ease-in-out duration-${ANIMATION_SPEED} h-24 w-24 cursor-pointer hover:scale-[1.02]`}
       style={{
         transform: `translate(${translateX}px, ${translateY}px)`,
       }}
@@ -48,6 +56,7 @@ const MovingGrid = ({ title, gridSize, items }: MovingGridProps) => {
   const [lastMovedBlockId, setLastMovedBlockId] = React.useState<string>(EMPTY_STRING)
 
   const emptySpaces = gridSize * gridSize - items.length
+  const size = gridSize * 110
 
   const shuffle = <T,>(array: T[]): T[] => {
     return [...array].sort(() => Math.random() - 0.5)
@@ -131,7 +140,7 @@ const MovingGrid = ({ title, gridSize, items }: MovingGridProps) => {
 
   return (
     <div className="flex flex-col items-center">
-      <h3 className="text-forest-d mb-2 text-3xl font-bold">{title}</h3>
+      <h3 className="text-whitePri mb-2 text-3xl font-bold">{title}</h3>
       <div
         className="relative grid"
         style={{

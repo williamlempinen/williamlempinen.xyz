@@ -22,7 +22,7 @@ const projects: Project[] = [
     name: 'Flappy bird game',
     info: 'Flappy bird game written in Haskell. Project uses the gloss library for rendering UI elements.',
     motivation:
-      'This project was made for the University of Turku’s “Programming Paradigms in Practice 2024.” The goal was to explore a purely functional language (Haskell) in game development.',
+      'This project was made for the University of Turku’s “Programming Paradigms in Practice 2024.” The goal was to explore a purely functional language.',
     url: 'https://github.com/williamlempinen/haskell-flappy-bird',
     img: 'flappy_bird.png',
   },
@@ -54,28 +54,28 @@ const Projects = () => {
       {projects.map((project) => (
         <React.Fragment key={project.name}>
           <div className="flex flex-col">
-            <h3 className="text-forest-d self-center text-3xl font-bold">{project.name}</h3>
+            <h3 className="text-hlPri self-center text-3xl font-bold">{project.name}</h3>
             <div className="grid grid-cols-1 gap-2 p-2 sm:grid-cols-2">
               <div className="flex flex-col justify-start">
                 <img
                   src={`images/${project.img}`}
                   alt={project.name}
-                  className="h-auto w-auto rounded-lg object-contain"
+                  className="border-whitePri h-auto w-auto rounded-xl border-2 object-contain"
                 />
               </div>
               <div className="flex flex-col justify-between">
-                <div className="flex flex-col gap-4">
-                  <p className="text-xl">
-                    <span className="text-forest-l text-2xl font-bold">About: </span>
+                <div className="border-grayPri bg-blackContainer flex flex-col gap-4 rounded-xl border-2 p-2">
+                  <p className="text-whitePri text-xl">
+                    <span className="text-hlSec text-2xl font-bold">About: </span>
                     {project.info}
                   </p>
-                  <p className="text-xl">
-                    <span className="text-forest-l text-2xl font-bold">Motivation: </span>
+                  <p className="text-whitePri text-xl">
+                    <span className="text-hlSec text-2xl font-bold">Motivation: </span>
                     {project.motivation}
                   </p>
                 </div>
                 <button
-                  className={`bg-forest-m hover:bg-forest-l mt-2 h-8 rounded-lg text-2xl text-white transition-all duration-[${ANIMATION_SPEED}] ease-in-out hover:scale-[1.02] hover:cursor-pointer`}
+                  className={`bg-hlPri hover:bg-hlPriSec mt-2 h-8 rounded-lg text-2xl text-white transition-all duration-[${ANIMATION_SPEED}] ease-in-out hover:scale-[1.02] hover:cursor-pointer`}
                   onClick={() => handleClick(project.url)}
                   title={project.url}
                 >
@@ -84,7 +84,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <hr className="w-full" />
+          <hr className="text-whitePri w-full" />
         </React.Fragment>
       ))}
     </div>
