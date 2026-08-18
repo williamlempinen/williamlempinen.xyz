@@ -4,7 +4,7 @@ const About = () => {
       <div>
         <h4 className="text-hlPri mb-1 text-6xl font-bold">Who I Am</h4>
         <article className="bg-blackContainer text-whitePri border-grayPri rounded-xl border-2 p-3 text-2xl leading-relaxed">
-          Hey there! I’m William, a 24-year-old Software Engineering student at the University of
+          Hey there! I’m William, a 25-year-old Software Engineering student at the University of
           Turku in Finland. I’m currently in my fourth year, majoring in Software Engineering with a
           minor in Cybersecurity. Technology keeps moving fast, and I’m just here enjoying the ride.
         </article>
