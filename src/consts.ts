@@ -22,6 +22,7 @@ import { FaLinux } from 'react-icons/fa6'
 import { BiLogoGit } from 'react-icons/bi'
 import { BiLogoReact } from 'react-icons/bi'
 import { BsEmojiLaughing } from 'react-icons/bs'
+import { SiKotlin } from 'react-icons/si'
 
 export type HEX = `#${string}`
 
@@ -110,7 +111,7 @@ export const TECH_STACK: GridBlock[] = [
   },
   {
     id: 'tech-stack-neovim',
-    alt: 'Neovim',
+    alt: 'NeoVim',
     href: 'https://neovim.io',
     icon: SiNeovim,
     blockColor: 'bg-nv',
@@ -118,11 +119,11 @@ export const TECH_STACK: GridBlock[] = [
     ...INIT_CELL,
   },
   {
-    id: 'tech-stack-vscode',
-    alt: 'Visual Studio Code',
-    href: 'https://code.visualstudio.com',
-    icon: BiLogoVisualStudio,
-    blockColor: 'bg-vsc',
+    id: 'tech-stack-kotlin',
+    alt: 'Kotlin',
+    href: 'https://kotlinlang.org/',
+    icon: SiKotlin,
+    blockColor: 'bg-kotlin',
     iconColor: 'text-white',
     ...INIT_CELL,
   },

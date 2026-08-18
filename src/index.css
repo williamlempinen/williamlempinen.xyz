@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-grayBg: #fbfbfb;
@@ -12,7 +12,7 @@
   --color-tPri: rgba(0, 0, 0, 0.87);
   --color-tSec: rgba(0, 0, 0, 0.6);
   --breakpoint-xs: 25rem;
- /* new style */ 
+  /* new style */
   --color-blackBg: oklch(21% 0.006 56.043);
   --color-blackContainer: oklch(14% 0.004 49.25);
   --color-whitePri: #f5f5f4;
@@ -32,6 +32,7 @@
   --color-rs: #f05023;
   --color-react: #58c4dc;
   --color-java: #ef9026;
+  --color-kotlin: #b521e8;
   --color-git: #eb4d28;
   --color-spring: #6aad3d;
   --color-linux: #010103;
@@ -56,7 +57,6 @@ body {
   font-family: 'Funnel Sans', sans-serif;
 }
 
-
 .be-stylish {
   transition: transform 0.2s ease-in-out;
 
@@ -66,10 +66,10 @@ body {
 }
 
 .squircle {
-    background: #fa7970;
-    clip-path: path(
-        "M 50 0 C 85 0 100 15 100 50 C 100 85 85 100 50 100 C 15 100 0 85 0 50 C 0 15 15 0 50 0 Z"
-    );
+  background: #fa7970;
+  clip-path: path(
+    'M 50 0 C 85 0 100 15 100 50 C 100 85 85 100 50 100 C 15 100 0 85 0 50 C 0 15 15 0 50 0 Z'
+  );
 }
 
 .fade-enter {
@@ -89,4 +89,3 @@ body {
   opacity: 0;
   transition: opacity 300ms ease-out;
 }
-
